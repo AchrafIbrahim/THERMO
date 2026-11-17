@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer components {
+  .main-wrapper {
+    @apply h-full flex flex-col p-4 md:p-6;
+  }
+
+  .icon {
+    @apply inline-block size-6 bg-current;
+    mask: var(--icon-mask) center / contain no-repeat;
+    -webkit-mask: var(--icon-mask) center / contain no-repeat;
+  }
+
+  .icon-morning {
+    --icon-mask: url("../assets/icons/icon-sunrise.svg");
+  }
+
+  .icon-afternoon {
+    --icon-mask: url("../assets/icons/icon-sun.svg");
+  }
+
+  .icon-evening {
+    --icon-mask: url("../assets/icons/icon-sunset.svg");
+  }
+
+  .icon-night {
+    --icon-mask: url("../assets/icons/icon-night.svg");
+  }
+}

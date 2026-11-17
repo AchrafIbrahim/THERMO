@@ -1,3 +1,7 @@
 {
-  "tailwindCSS.experimental.configFile": "./src/css/index.css"
+  "tailwindCSS.experimental.configFile": "./src/css/index.css",
+  "css.lint.unknownAtRules": "ignore",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

@@ -3,8 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/output.css" />
     <title>THERMO</title>
   </head>
-  <body></body>
+  <body class="m-0 p-0 overflow-hidden">
+    <div class="relative w-full h-dvh overflow-hidden">
+      <img src="src/assets/img/bg-morning-ground.png" alt="Morning" class="absolute inset-0 w-full h-full object-cover object-center" />
+      <div class="relative z-10 main-wrapper items-center">
+        <div class="flex flex-row justify-center items-center align-center w-fit h-fit border-1 border-white rounded-full p-2 gap-2 md:gap-4">
+          <div class="flex justify-center items-center border border-transparent hover:border-white active:border-white active:bg-white/10 rounded-full p-2 cursor-pointer">
+            <span class="icon icon-morning size-6 md:size-8 lg:size-[24px]"></span>
+          </div>
+          <div class="flex justify-center items-center border border-transparent hover:border-white active:border-white active:bg-white/10 rounded-full p-2 cursor-pointer">
+            <span class="icon icon-afternoon size-6 md:size-8 lg:size-[24px]"></span>
+          </div>
+          <div class="flex justify-center items-center border border-transparent hover:border-white active:border-white active:bg-white/10 rounded-full p-2 cursor-pointer">
+            <span class="icon icon-evening size-6 md:size-8 lg:size-[24px]"></span>
+          </div>
+          <div class="flex justify-center items-center border border-transparent hover:border-white active:border-white active:bg-white/10 rounded-full p-2 cursor-pointer">
+            <span class="icon icon-night size-6 md:size-8 lg:size-[24px]"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
