@@ -1,0 +1,11 @@
+# Dependensi (paling penting, ukurannya sangat besar)
+node_modules/
+
+# File environment (berisi kunci sensitif, jangan sampai masuk ke repository)
+.env
+.env.local
+.env.*.local
+
+# File log
+*.log
+npm-debug.log*
