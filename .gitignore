@@ -1,6 +1,9 @@
 node_modules/
-src/css/index.css
+src/css/output.css
 *.log
 npm-debug.log*
 .env
 .env.local
+.DS_Store
+.vscode/*
+!.vscode/settings.json
