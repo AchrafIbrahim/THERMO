@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+:root {
+  --liquid-stroke-width: 0.5px;
+  --liquid-stroke-angle: 135deg;
+  --liquid-stroke-from: rgb(255 255 255 / 0.6);
+  --liquid-stroke-to: rgb(255 255 255 / 0.05);
+}
+
 @theme {
   --color-neutral-white: #f9f9f9;
   --color-hover-neutral-white: #e0e0e0;
@@ -7,10 +14,36 @@
   --color-neutral-black: #070c1b;
   --color-hover-neutral-black: #060b18;
   --color-active-neutral-black: #060a16;
+
+  --shadow-liquid: inset 0 -1.99px 3.97px 0 rgb(0 0 0 / 0.2), inset 0 1.99px 3.97px 0 rgb(255 255 255 / 0.4);
+
+  --blur-liquid: 4.97px;
 }
 
 @layer components {
   .main-wrapper {
     @apply h-full flex flex-col p-4 md:p-6;
+  }
+}
+
+@utility glass {
+  @apply relative rounded-full shadow-liquid backdrop-blur-liquid;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: var(--liquid-stroke-width);
+    background: linear-gradient(var(--liquid-stroke-angle), var(--liquid-stroke-from), var(--liquid-stroke-to));
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  & > * {
+    @apply relative;
   }
 }
