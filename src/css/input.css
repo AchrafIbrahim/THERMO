@@ -18,6 +18,174 @@
   --shadow-liquid: inset 0 -1.99px 3.97px 0 rgb(0 0 0 / 0.2), inset 0 1.99px 3.97px 0 rgb(255 255 255 / 0.4);
 
   --blur-liquid: 4.97px;
+
+  --font-sf-pro: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif";
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* Main (SF Pro) */
+  --text-title-xl: 3.75rem;
+  --text-title-xl--line-height: 72px;
+  --text-title-xl--font-weight: 700;
+
+  --text-title-large: 3.5rem;
+  --text-title-large--line-height: 64px;
+  --text-title-large--font-weight: 700;
+
+  --text-title-regular: 3rem;
+  --text-title-regular--line-height: 56px;
+  --text-title-regular--font-weight: 700;
+
+  --text-heading-h1: 2.25rem;
+  --text-heading-h1--line-height: 48px;
+  --text-heading-h1--font-weight: 700;
+
+  --text-heading-h2: 2.25rem;
+  --text-heading-h2--line-height: 44px;
+  --text-heading-h2--font-weight: 400;
+
+  --text-heading-h3: 2rem;
+  --text-heading-h3--line-height: 40px;
+  --text-heading-h3--font-weight: 400;
+
+  --text-heading-h4: 1.75rem;
+  --text-heading-h4--line-height: 36px;
+  --text-heading-h4--font-weight: 400;
+
+  --text-heading-h5: 1.5rem;
+  --text-heading-h5--line-height: 32px;
+  --text-heading-h5--font-weight: 400;
+
+  --text-heading-h6: 1.25rem;
+  --text-heading-h6--line-height: 28px;
+  --text-heading-h6--font-weight: 400;
+
+  --text-body-xl: 1.25rem;
+  --text-body-xl--line-height: 32px;
+  --text-body-xl--font-weight: 400;
+
+  --text-body-large: 1.125rem;
+  --text-body-large--line-height: 28px;
+  --text-body-large--font-weight: 400;
+
+  --text-body-regular: 1rem;
+  --text-body-regular--line-height: 24px;
+  --text-body-regular--font-weight: 400;
+
+  --text-body-small: 0.875rem;
+  --text-body-small--line-height: 20px;
+  --text-body-small--font-weight: 400;
+
+  --text-body-xs: 0.75rem;
+  --text-body-xs--line-height: 16px;
+  --text-body-xs--font-weight: 400;
+
+  --text-label-large: 1rem;
+  --text-label-large--line-height: 24px;
+  --text-label-large--font-weight: 500;
+
+  --text-label-regular: 0.875rem;
+  --text-label-regular--line-height: 20px;
+  --text-label-regular--font-weight: 500;
+
+  --text-label-small: 0.75rem;
+  --text-label-small--line-height: 16px;
+  --text-label-small--font-weight: 500;
+
+  --text-label-xs: 0.625rem;
+  --text-label-xs--line-height: 12px;
+  --text-label-xs--font-weight: 500;
+
+  --text-caption-large: 0.875rem;
+  --text-caption-large--line-height: 20px;
+
+  --text-caption-regular: 0.75rem;
+  --text-caption-regular--line-height: 18px;
+
+  --text-caption-small: 0.625rem;
+  --text-caption-small--line-height: 16px;
+
+  /* Number (Poppins) */
+  --text-num-title-xl: 3.75rem;
+  --text-num-title-xl--line-height: 72px;
+  --text-num-title-xl--font-weight: 700;
+
+  --text-num-title-large: 3.5rem;
+  --text-num-title-large--line-height: 64px;
+  --text-num-title-large--font-weight: 700;
+
+  --text-num-title-regular: 3rem;
+  --text-num-title-regular--line-height: 56px;
+  --text-num-title-regular--font-weight: 700;
+
+  --text-num-heading-h1: 2.5rem;
+  --text-num-heading-h1--line-height: 48px;
+  --text-num-heading-h1--font-weight: 700;
+
+  --text-num-heading-h2: 2.25rem;
+  --text-num-heading-h2--line-height: 44px;
+  --text-num-heading-h2--font-weight: 700;
+
+  --text-num-heading-h3: 2rem;
+  --text-num-heading-h3--line-height: 40px;
+  --text-num-heading-h3--font-weight: 700;
+
+  --text-num-heading-h4: 1.75rem;
+  --text-num-heading-h4--line-height: 36px;
+  --text-num-heading-h4--font-weight: 700;
+
+  --text-num-heading-h5: 1.5rem;
+  --text-num-heading-h5--line-height: 32px;
+  --text-num-heading-h5--font-weight: 700;
+
+  --text-num-heading-h6: 1.25rem;
+  --text-num-heading-h6--line-height: 28px;
+  --text-num-heading-h6--font-weight: 700;
+
+  --text-num-body-xl: 1.25rem;
+  --text-num-body-xl--line-height: 32px;
+  --text-num-body-xl--font-weight: 400;
+
+  --text-num-body-large: 1.125rem;
+  --text-num-body-large--line-height: 28px;
+  --text-num-body-large--font-weight: 400;
+
+  --text-num-body-regular: 1rem;
+  --text-num-body-regular--line-height: 24px;
+  --text-num-body-regular--font-weight: 400;
+
+  --text-num-body-small: 0.875rem;
+  --text-num-body-small--line-height: 20px;
+  --text-num-body-small--font-weight: 400;
+
+  --text-num-body-xs: 0.75rem;
+  --text-num-body-xs--line-height: 16px;
+  --text-num-body-xs--font-weight: 400;
+
+  --text-num-label-large: 1rem;
+  --text-num-label-large--line-height: 24px;
+  --text-num-label-large--font-weight: 500;
+
+  --text-num-label-regular: 0.875rem;
+  --text-num-label-regular--line-height: 20px;
+  --text-num-label-regular--font-weight: 500;
+
+  --text-num-label-small: 0.75rem;
+  --text-num-label-small--line-height: 16px;
+  --text-num-label-small--font-weight: 500;
+
+  --text-num-label-xs: 0.625rem;
+  --text-num-label-xs--line-height: 12px;
+  --text-num-label-xs--font-weight: 500;
+
+  --text-num-caption-large: 0.875rem;
+  --text-num-caption-large--line-height: 20px;
+
+  --text-num-caption-regular: 0.75rem;
+  --text-num-caption-regular--line-height: 18px;
+
+  --text-num-caption-small: 0.625rem;
+  --text-num-caption-small--line-height: 16px;
 }
 
 @layer components {
