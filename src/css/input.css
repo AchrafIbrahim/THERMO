@@ -19,11 +19,10 @@
 
   --blur-liquid: 4.97px;
 
-  --font-sf-pro: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif";
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
 
-  /* Main (SF Pro) */
+  /* Main (Inter) */
   --text-title-xl: 3.75rem;
   --text-title-xl--line-height: 72px;
   --text-title-xl--font-weight: 700;
@@ -195,7 +194,7 @@
 }
 
 @utility glass {
-  @apply relative rounded-full shadow-liquid backdrop-blur-liquid;
+  @apply relative shadow-liquid backdrop-blur-liquid;
 
   &::before {
     content: "";
