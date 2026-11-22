@@ -115,22 +115,35 @@
                 <span class="text-heading-h6">Partly Sunny</span>
               </div>
             </div>
-            <div class="card-container-left-bottom">
-              <div class="right">
-                <div class="card-small-location">
-                  <span>Jakarta</span>
-                  <!--SVG ARROW DOWN HERE-->
+            <div class="card-container-left-bottom glass rounded-2xl w-full max-w-[500px] md:max-w-[350px] h-fit p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
+              <div class="right min-w-0 flex flex-col gap-3 md:gap-4">
+                <button class="card-small-location flex flex-row items-center text-neutral-white gap-3 cursor-pointer">
+                  <span class="font-inter text-heading-h6">Bogor</span>
+                  <svg class="size-5 md:size-6 shrink-0" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.86286 9.26405C3.19104 8.93594 3.6361 8.75162 4.10017 8.75162C4.56423 8.75162 5.0093 8.93594 5.33747 9.26405L14 17.9265L22.6625 9.26405C22.9941 8.9553 23.4326 8.78723 23.8857 8.7952C24.3387 8.80318 24.771 8.98658 25.0916 9.30681C25.4122 9.62704 25.5961 10.0591 25.6046 10.5122C25.6131 10.9652 25.4455 11.4039 25.1371 11.7359L15.2386 21.6371C14.9105 21.9652 14.4654 22.1495 14.0013 22.1495C13.5373 22.1495 13.0922 21.9652 12.764 21.6371L2.86286 11.7387C2.53476 11.4105 2.35043 10.9654 2.35043 10.5014C2.35043 10.0373 2.53476 9.59223 2.86286 9.26405Z"
+                    />
+                  </svg>
+                </button>
+                <div class="card-small-temperature w-full h-fit flex flex-row justify-between items-center gap-2">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="41.5231" width="16" height="3" rx="1.5" transform="rotate(-60 0 41.5231)" fill="#B6D1E5" />
+                    <rect x="10" y="41.5231" width="16" height="3" rx="1.5" transform="rotate(-60 10 41.5231)" fill="#B6D1E5" />
+                    <rect x="20" y="41.5231" width="16" height="3" rx="1.5" transform="rotate(-60 20 41.5231)" fill="#B6D1E5" />
+                    <rect x="30" y="41.5231" width="16" height="3" rx="1.5" transform="rotate(-60 30 41.5231)" fill="#B6D1E5" />
+                    <path
+                      d="M38.5417 27.6667H9.375C4.20625 27.6667 0 23.4615 0 18.2917C0 13.1219 4.20625 8.91666 9.375 8.91666C10.2208 8.91666 11.0656 9.03645 11.8979 9.27499C12.965 7.27975 14.5533 5.61138 16.4938 4.44763C18.4342 3.28388 20.654 2.66836 22.9167 2.66666C25.3086 2.66693 27.6501 3.35403 29.6628 4.64626C31.6756 5.9385 33.275 7.78152 34.2708 9.95624C35.5904 9.27197 37.0553 8.9154 38.5417 8.91666C43.7104 8.91666 47.9167 13.1219 47.9167 18.2917C47.9167 23.4615 43.7104 27.6667 38.5417 27.6667Z"
+                      fill="#BBBBBB"
+                    />
+                  </svg>
+                  <span class="text-num-heading-h2 md:text-num-heading-h1 text-neutral-white">26°C</span>
                 </div>
-                <div class="card-small-temperature">
-                  <!--SVG WEATHER ICON HERE-->
-                  <span>29°C</span>
-                </div>
-                <div class="card-small-forecast">
+                <button class="card-small-forecast font-inter text-neutral-white/70 whitespace-nowrap text-body-small text-body-regular cursor-pointer">
                   <span>See weather forecast</span>
-                </div>
+                </button>
               </div>
-              <div class="left">
-                <span>Partly Sunny</span>
+              <div class="left w-min shrink-0 text-center text-neutral-white font-inter">
+                <span class="text-heading-h6">Heavy Rain</span>
               </div>
             </div>
           </div>
