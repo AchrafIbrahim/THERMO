@@ -78,9 +78,9 @@
         </div>
 
         <!--WEATHER CARD-->
-        <main class="card-container max-w-4xl mx-auto w-full h-fit p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[373px_373px] lg:justify-center gap-5 md:gap-10">
-          <div class="card-container-left w-full h-fit p-0 m-0 gap-4 md:gap-6 sm:shrink-0 flex flex-col justify-start items-stretch">
-            <div class="card-container-left-top glass rounded-2xl w-full h-fit p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
+        <main class="card-container max-w-[480px] sm:max-w-3xl lg:max-w-4xl mx-auto w-full h-fit p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[373px_373px] lg:justify-center gap-5 md:gap-10">
+          <div class="card-container-left min-w-0 w-full h-fit p-0 m-0 gap-4 md:gap-6 sm:shrink-0 flex flex-col sm:flex-row md:flex-col justify-start items-stretch">
+            <div class="card-container-left-top glass rounded-2xl w-full flex-1 min-w-0 p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
               <div class="right min-w-0 flex flex-col gap-3 md:gap-4">
                 <button class="card-small-location flex flex-row items-center text-neutral-white gap-3 cursor-pointer">
                   <span class="font-inter text-heading-h6">Jakarta</span>
@@ -115,7 +115,7 @@
                 <span class="text-heading-h6">Partly Sunny</span>
               </div>
             </div>
-            <div class="card-container-left-bottom glass rounded-2xl w-full h-fit p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
+            <div class="card-container-left-bottom glass rounded-2xl w-full flex-1 min-w-0 p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
               <div class="right min-w-0 flex flex-col gap-3 md:gap-4">
                 <button class="card-small-location flex flex-row items-center text-neutral-white gap-3 cursor-pointer">
                   <span class="font-inter text-heading-h6">Bogor</span>
@@ -138,7 +138,7 @@
                   </svg>
                   <span class="text-num-heading-h2 md:text-num-heading-h1 text-neutral-white">26°C</span>
                 </div>
-                <button class="card-small-forecast font-inter text-neutral-white/70 whitespace-nowrap text-body-small text-body-regular cursor-pointer">
+                <button class="card-small-forecast font-inter text-neutral-white/70 whitespace-nowrap text-body-small md:text-body-regular cursor-pointer">
                   <span>See weather forecast</span>
                 </button>
               </div>
@@ -147,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container-right glass rounded-2xl w-full h-full flex flex-row justify-center items-center gap-4 md:gap-6">
+          <div class="card-container-right glass rounded-2xl min-w-0 w-full h-full flex flex-row justify-center items-center gap-4 md:gap-6">
             <div class="card-big p-4 sm:p-5 md:p-6 flex flex-col justify-center items-center w-full h-full">
               <button class="card-big-location glass w-fit h-fit flex flex-row items-center justify-center text-neutral-white rounded-2xl p-2 cursor-pointer">
                 <svg class="size-9 md:size-11 shrink-0" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,6 @@
         </main>
       </div>
     </div>
-
     <script src="./src/js/script.js" defer></script>
   </body>
 </html>
