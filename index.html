@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>THERMO</title>
   </head>
-  <body class="m-0 p-0 overflow-hidden">
-    <div id="bg-container" class="w-full h-screen bg-cover bg-center transition-all duration-700" style="background-image: url(&quot;./src/assets/img/bg-morning-ground.png&quot;)">
-      <div class="main-wrapper flex flex-col h-full items-center">
+  <body class="m-0 p-0">
+    <div id="bg-container" class="w-full h-dvh overflow-y-auto bg-cover bg-center transition-all duration-700" style="background-image: url(&quot;./src/assets/img/bg-morning-ground.png&quot;)">
+      <div class="main-wrapper flex flex-col min-h-full items-center">
         <!--THEME NAV-->
         <div class="glass flex flex-row justify-center items-center align-center w-fit h-fit rounded-full p-2 gap-2">
           <button id="btn-morning" class="rounded-full p-2 flex items-center justify-center transition hover:glass active:glass cursor-pointer">
@@ -78,7 +78,7 @@
         </div>
 
         <!--WEATHER CARD-->
-        <main class="card-container max-w-4xl mx-auto w-full h-fit p-5 m-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[373px_373px] lg:justify-center gap-5 md:gap-10">
+        <main class="card-container max-w-4xl mx-auto w-full h-fit p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[373px_373px] lg:justify-center gap-5 md:gap-10">
           <div class="card-container-left w-full h-fit p-0 m-0 gap-4 md:gap-6 sm:shrink-0 flex flex-col justify-start items-stretch">
             <div class="card-container-left-top glass rounded-2xl w-full h-fit p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
               <div class="right min-w-0 flex flex-col gap-3 md:gap-4">
