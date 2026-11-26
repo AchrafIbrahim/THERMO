@@ -14,71 +14,34 @@
   </head>
   <body class="m-0 p-0">
     <div id="bg-container" class="w-full h-dvh overflow-y-auto bg-cover bg-center transition-all duration-700" style="background-image: url(&quot;./src/assets/img/bg-morning-ground.png&quot;)">
-      <div class="main-wrapper flex flex-col min-h-full items-center">
-        <!--THEME NAV-->
-        <div class="glass flex flex-row justify-center items-center align-center w-fit h-fit rounded-full p-2 gap-2">
-          <button id="btn-morning" class="rounded-full p-2 flex items-center justify-center transition hover:glass active:glass cursor-pointer">
-            <svg class="w-6 md:w-7 h-6 md:h-7 text-neutral-white bg-neutral-white/2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.2171 8.8721C14.6867 8.37777 14.0592 7.99938 13.3744 7.76106C12.6897 7.52274 11.9628 7.4297 11.24 7.4879C10.5173 7.54609 9.8147 7.75423 9.1769 8.09905C8.5391 8.44387 7.98015 8.91781 7.53568 9.49063C7.09121 10.0635 6.77098 10.7226 6.5954 11.4261C6.41981 12.1295 6.39273 12.8619 6.51588 13.5764C6.63903 14.2909 6.9097 14.9719 7.31065 15.576C7.7116 16.1801 8.23402 16.694 8.84461 17.085M17.3047 7.07296L18.4721 5.90558M11.6738 4.7382V3.09013M6.04289 7.07296L4.87551 5.90558M3.70813 12.7039H2.06006M6.04289 18.3348L4.87551 19.5021"
-                stroke-width="2.06009"
-                stroke-linecap="round"
-                stroke="currentColor"
-              />
-              <path
-                d="M14.6033 20.3867C14.0964 20.0514 13.5199 19.8108 12.8998 19.6905C12.6046 19.6331 12.2995 19.6031 11.9873 19.6031C9.38675 19.6031 7.27856 21.6865 7.27856 24.2565C7.27856 26.8265 9.38675 28.9099 11.9873 28.9099H22.9744C26.4419 28.9099 29.2528 26.132 29.2528 22.7053C29.2528 19.9895 27.4872 17.6813 25.0284 16.8405M12.8998 19.6905C12.648 19.019 12.5105 18.2929 12.5105 17.535C12.5105 14.1083 15.3214 11.3305 18.7889 11.3305C22.0188 11.3305 24.679 13.7407 25.0284 16.8405M25.0284 16.8405C24.3847 16.6204 23.6938 16.5009 22.9744 16.5009C22.2406 16.5009 21.5362 16.6253 20.8817 16.8539"
-                stroke-width="2.06009"
-                stroke-linecap="round"
-                stroke="currentColor"
-              />
-            </svg>
-          </button>
-          <button id="btn-afternoon" class="rounded-full p-2 flex items-center justify-center transition hover:glass active:glass cursor-pointer">
-            <svg class="w-6 md:w-7 h-6 md:h-7 text-neutral-white bg-neutral-white/2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M23.8368 16C23.8368 20.3281 20.3282 23.8367 16.0001 23.8367C11.672 23.8367 8.16333 20.3281 8.16333 16C8.16333 11.6719 11.672 8.16326 16.0001 8.16326C20.3282 8.16326 23.8368 11.6719 23.8368 16Z"
-                stroke-width="1.95918"
-                stroke-linecap="round"
-                stroke="currentColor"
-              />
-              <path d="M16 2.93877V4.2449" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M16 27.7551V29.0612" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M29.0612 16H27.7551" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M4.24509 16H2.93896" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M25.235 6.76467L24.7219 7.27777" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M7.27775 24.7225L6.76465 25.2357" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M25.235 25.2353L24.7219 24.7223" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-              <path d="M7.27775 7.27742L6.76465 6.76432" stroke-width="1.95918" stroke-linecap="round" stroke="currentColor" />
-            </svg>
-          </button>
-          <button id="btn-evening" class="rounded-full p-2 flex items-center justify-center transition hover:glass active:glass cursor-pointer">
-            <svg class="w-6 md:w-7 h-6 md:h-7 text-neutral-white bg-neutral-white/2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.6667 29.3333H21.3334" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" />
-              <path d="M6.66675 25.3333H25.3334" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" />
-              <path d="M2.66675 21.3333H29.3334" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" />
-              <path d="M24 16C24 11.5817 20.4183 8 16 8C11.5817 8 8 11.5817 8 16C8 18.0289 8.75527 19.8813 10 21.2916H22C23.2447 19.8813 24 18.0289 24 16Z" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
-              <path d="M16 2.66667V4.00001" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
-              <path d="M29.3333 16H28" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
-              <path d="M4.00008 16H2.66675" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
-              <path d="M25.4273 6.57227L24.9036 7.09605" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
-              <path d="M7.09605 7.09573L6.57227 6.57195" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
-            </svg>
-          </button>
-          <button id="btn-night" class="rounded-full p-2 flex items-center justify-center transition hover:glass active:glass cursor-pointer">
-            <svg class="w-5 md:w-6 h-5 md:h-6 text-neutral-white bg-neutral-white/2" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M14.0001 25.4286C20.3119 25.4286 25.4287 20.3118 25.4287 14C25.4287 13.4712 24.6361 13.3838 24.3626 13.8363C23.0617 15.9893 20.699 17.4286 18.0001 17.4286C13.8974 17.4286 10.5715 14.1027 10.5715 10C10.5715 7.30108 12.0108 4.93834 14.1638 3.63744C14.6163 3.36396 14.5289 2.57143 14.0001 2.57143C7.68828 2.57143 2.57153 7.68817 2.57153 14C2.57153 20.3118 7.68828 25.4286 14.0001 25.4286Z"
-                stroke-width="1.71429"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="currentColor"
-              />
-            </svg>
-          </button>
+      <div class="main-wrapper">
+        <div class="content">
+          <!--THEME NAV-->
+          <header class="flex h-11 w-full justify-end">
+            <div id="theme-switcher" class="glass theme-switcher-black">
+              <button id="theme-trigger" type="button" class="group flex h-11 items-center gap-1 rounded-full px-3 text-neutral-white" aria-label="Change theme" aria-haspopup="menu" aria-expanded="false" aria-controls="theme-menu">
+                <img id="theme-trigger-icon" src="./src/assets/img/bg-morning-ground.png" alt="" class="size-6 rounded-full" />
+                <svg class="size-4 transition-transform group-aria-expanded:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+
+              <!--THEME DROPDOWN-->
+              <div id="theme-menu" role="menu" aria-label="Theme" class="theme-switcher-black hidden">
+                <button type="button" role="menuitemradio" data-theme="morning" aria-label="Morning" aria-checked="true" class=""><img src="./src/assets/img/bg-morning-ground.png" alt="" class="size-6 rounded-full" /></button>
+                <button type="button" role="menuitemradio" data-theme="afternoon" aria-label="Afternoon" aria-checked="true" class="rounded-full">
+                  <img src="./src/assets/img/bg-afternoon-ground.png" alt="" class="size-6 rounded-full" />
+                </button>
+                <button type="button" role="menuitemradio" data-theme="evening" aria-label="Evening" aria-checked="true" class="rounded-full"><img src="./src/assets/img/bg-evening-ground.png" alt="" class="size-6 rounded-full" /></button>
+                <button type="button" role="menuitemradio" data-theme="night" aria-label="Night" aria-checked="true" class="rounded-full"><img src="./src/assets/img/bg-night-ground.png" alt="" class="size-6 rounded-full" /></button>
+              </div>
+            </div>
+          </header>
         </div>
 
         <!--WEATHER CARD-->
         <main class="card-container max-w-[480px] sm:max-w-3xl lg:max-w-4xl mx-auto w-full h-fit p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[373px_373px] lg:justify-center gap-5 md:gap-10">
+          <!--
           <div class="card-container-left min-w-0 w-full gap-4 md:gap-6 flex flex-col sm:flex-row md:flex-col justify-start items-stretch">
             <div class="card-container-left-top glass rounded-2xl w-full flex-1 min-w-0 p-4 sm:p-5 md:p-6 flex flex-row justify-between items-center gap-4 md:gap-6">
               <div class="right min-w-0 flex flex-col gap-3 md:gap-4">
@@ -267,6 +230,7 @@
               </div>
             </div>
           </div>
+          -->
         </main>
 
         <footer class="mt-auto w-full px-5 pt-6 pb-3 text-center sm:pb-5">

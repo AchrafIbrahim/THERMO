@@ -7,6 +7,60 @@
   --liquid-stroke-to: rgb(255 255 255 / 0.05);
 }
 
+@layer components {
+  .main-wrapper {
+    @apply min-h-full flex flex-col items-center
+         p-4 md:p-8 lg:p-12
+         pt-[max(1rem,env(safe-area-inset-top))] md:pt-8 lg:pt-12
+         pb-[max(1rem,env(safe-area-inset-bottom))] md:pb-8 lg:pb-12;
+  }
+
+  .content {
+    @apply w-full max-w-280 flex flex-col gap-6;
+  }
+
+  .scroller {
+    @apply -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 overflow-x-auto;
+  }
+
+  .theme-switcher-black {
+    @apply z-10 flex flex-col items-center 
+         bg-neutral-black/10 backdrop-blur-lg;
+  }
+
+  .theme-switcher-white {
+    @apply z-10 flex flex-col items-center  
+         bg-neutral-white/10 backdrop-blur-lg;
+  }
+
+  .theme-option {
+    @apply flex size-10 items-center justify-center text-neutral-white
+         hover:bg-neutral-white/15 aria-checked:bg-neutral-white/25;
+  }
+}
+
+@utility glass {
+  @apply relative rounded-[20px] shadow-liquid backdrop-blur-liquid;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: var(--liquid-stroke-width);
+    background: linear-gradient(var(--liquid-stroke-angle), var(--liquid-stroke-from), var(--liquid-stroke-to));
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  & > * {
+    @apply relative;
+  }
+}
+
 @theme {
   --color-neutral-white: #f9f9f9;
   --color-hover-neutral-white: #e0e0e0;
@@ -186,32 +240,4 @@
 
   --text-num-caption-small: 0.625rem;
   --text-num-caption-small--line-height: 16px;
-}
-
-@layer components {
-  .main-wrapper {
-    @apply h-full flex flex-col p-4 md:p-6;
-  }
-}
-
-@utility glass {
-  @apply relative rounded-full shadow-liquid backdrop-blur-liquid;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: var(--liquid-stroke-width);
-    background: linear-gradient(var(--liquid-stroke-angle), var(--liquid-stroke-from), var(--liquid-stroke-to));
-    mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    mask-composite: exclude;
-    pointer-events: none;
-  }
-
-  & > * {
-    @apply relative;
-  }
 }
