@@ -5,7 +5,9 @@ const triggerIcon = document.getElementById("theme-trigger-icon");
 const triggerLabel = document.getElementById("time-label");
 const menu = document.getElementById("theme-menu");
 const options = menu.querySelectorAll("[data-theme]");
-toneTargets = [trigger, menu];
+const search = document.getElementById("theme-search");
+const refresh = document.getElementById("theme-refresh");
+toneTargets = [trigger, menu, search, refresh];
 const TONE_CLASSES = ["theme-switcher-black", "theme-switcher-white"];
 
 const themes = {
