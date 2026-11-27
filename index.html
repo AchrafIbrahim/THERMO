@@ -70,9 +70,11 @@
 
           <!--MAIN CONTENT-->
           <main class="main-container flex flex-col justify-center items-center gap-[10px] md:gap-[20px]">
+            <!--TITLE-->
             <div class="main-title text-num-title-regular md:text-num-title-large lg:text-num-title-xl text-neutral-white">
               <h1>THERMO</h1>
             </div>
+            <!--SEARCH AND REFRESH-->
             <div class="main-searchbar-refresh text-neutral-white text-label-large w-full gap-[10px] flex flex-row justify-center items-center">
               <form role="search" id="theme-search" class="search-bar glass theme-switcher-black max-w-[600px] w-full md:w-[600px] h-12 px-[7px] py-[6px] flex  items-center">
                 <input type="search" placeholder="Find location..." aria-label="Input Search" class="min-w-0 flex-1 text-right border-none outline-none focus:ring-0 bg-transparent appearance-none">
@@ -87,6 +89,37 @@
                   <path d="M25.3334 12C24.5504 10.1735 23.2488 8.61692 21.5898 7.52304C19.9307 6.42916 17.9872 5.8461 16 5.8461C14.0128 5.8461 12.0693 6.42916 10.4103 7.52304C8.75123 8.61692 7.44961 10.1735 6.66669 12M6.66669 4V12H14.6667M6.66669 20C7.44961 21.8265 8.75123 23.3831 10.4103 24.477C12.0693 25.5708 14.0128 26.1539 16 26.1539C17.9872 26.1539 19.9307 25.5708 21.5898 24.477C23.2488 23.3831 24.5504 21.8265 25.3334 20M25.3334 28V20H17.3334" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/>
                 </svg>
               </button>
+            </div>
+            <!--CARD BIG-->
+            <div id="theme-cardbig" class="card-big glass theme-switcher-black flex flex-col lg:flex-row justify-between items-center lg:items-stretch max-w-[1030px] w-full h-fit gap-[20px] p-[20px]">
+              <div class="card-big-top w-full h-auto flex flex-row lg:grid lg:grid-cols-2 justify-between items-center gap-4 lg:gap-25">
+                <div class="card-big-top-left shrink-0 h-fit flex flex-col gap-[16px]">
+                  <div class="card-big-top-left-loc text-heading-h5 text-neutral-white w-full h-full flex flex-col items-start">
+                    <span class="location">Jakarta</span>
+                  </div>
+                  <div class="card-big-top-left-temp flex flex-row items-center gap-8">
+                    <svg class="shrink-0 size-11 md:size-12" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4583 24.9999C11.4583 28.5914 12.885 32.0358 15.4246 34.5753C17.9642 37.1149 21.4085 38.5416 25 38.5416C28.5915 38.5416 32.0359 37.1149 34.5754 34.5753C37.115 32.0358 38.5417 28.5914 38.5417 24.9999C38.5417 21.4084 37.115 17.9641 34.5754 15.4245C32.0359 12.885 28.5915 11.4583 25 11.4583C21.4085 11.4583 17.9642 12.885 15.4246 15.4245C12.885 17.9641 11.4583 21.4084 11.4583 24.9999Z" fill="#EFD358"/>
+                      <path d="M4.16667 26.0417H2.08333C1.80707 26.0417 1.54211 25.932 1.34676 25.7367C1.15141 25.5413 1.04167 25.2763 1.04167 25.0001C1.04167 24.7238 1.15141 24.4589 1.34676 24.2635C1.54211 24.0682 1.80707 23.9584 2.08333 23.9584H4.16667C4.44293 23.9584 4.70788 24.0682 4.90324 24.2635C5.09859 24.4589 5.20833 24.7238 5.20833 25.0001C5.20833 25.2763 5.09859 25.5413 4.90324 25.7367C4.70788 25.932 4.44293 26.0417 4.16667 26.0417ZM10.2083 11.2501C10.0715 11.2502 9.93604 11.2233 9.80965 11.171C9.68327 11.1186 9.56848 11.0417 9.47187 10.9449L8.01354 9.48654C7.91405 9.39045 7.8347 9.27551 7.7801 9.14842C7.72551 9.02133 7.69678 8.88464 7.69557 8.74633C7.69437 8.60802 7.72073 8.47086 7.7731 8.34284C7.82548 8.21482 7.90283 8.09852 8.00063 8.00071C8.09844 7.90291 8.21474 7.82556 8.34276 7.77319C8.47077 7.72081 8.60794 7.69445 8.74625 7.69566C8.88456 7.69686 9.02125 7.72559 9.14834 7.78019C9.27542 7.83478 9.39037 7.91413 9.48646 8.01362L10.9448 9.47196C11.0904 9.61763 11.1896 9.80322 11.2298 10.0053C11.2699 10.2073 11.2493 10.4167 11.1705 10.607C11.0917 10.7973 10.9582 10.96 10.7869 11.0745C10.6157 11.1889 10.4143 11.25 10.2083 11.2501ZM25 5.20841C24.8632 5.20841 24.7278 5.18147 24.6014 5.12912C24.475 5.07677 24.3602 5.00005 24.2634 4.90332C24.1667 4.80659 24.09 4.69176 24.0376 4.56538C23.9853 4.439 23.9583 4.30354 23.9583 4.16675V2.08341C23.9583 1.80715 24.0681 1.5422 24.2634 1.34685C24.4588 1.15149 24.7237 1.04175 25 1.04175C25.2763 1.04175 25.5412 1.15149 25.7366 1.34685C25.9319 1.5422 26.0417 1.80715 26.0417 2.08341V4.16675C26.0417 4.30354 26.0147 4.439 25.9624 4.56538C25.91 4.69176 25.8333 4.80659 25.7366 4.90332C25.6398 5.00005 25.525 5.07677 25.3986 5.12912C25.2722 5.18147 25.1368 5.20841 25 5.20841ZM39.7917 11.2501C39.5857 11.25 39.3843 11.1889 39.2131 11.0745C39.0418 10.96 38.9083 10.7973 38.8295 10.607C38.7507 10.4167 38.7301 10.2073 38.7702 10.0053C38.8104 9.80322 38.9096 9.61763 39.0552 9.47196L40.5135 8.01362C40.6096 7.91413 40.7246 7.83478 40.8517 7.78019C40.9788 7.72559 41.1154 7.69686 41.2537 7.69566C41.3921 7.69445 41.5292 7.72081 41.6572 7.77319C41.7853 7.82556 41.9016 7.90291 41.9994 8.00071C42.0972 8.09852 42.1745 8.21482 42.2269 8.34284C42.2793 8.47086 42.3056 8.60802 42.3044 8.74633C42.3032 8.88464 42.2745 9.02133 42.2199 9.14842C42.1653 9.27551 42.086 9.39045 41.9865 9.48654L40.5281 10.9449C40.4315 11.0417 40.3167 11.1186 40.1903 11.171C40.064 11.2233 39.9285 11.2502 39.7917 11.2501ZM47.9167 26.0417H45.8333C45.5571 26.0417 45.2921 25.932 45.0968 25.7367C44.9014 25.5413 44.7917 25.2763 44.7917 25.0001C44.7917 24.7238 44.9014 24.4589 45.0968 24.2635C45.2921 24.0682 45.5571 23.9584 45.8333 23.9584H47.9167C48.1929 23.9584 48.4579 24.0682 48.6532 24.2635C48.8486 24.4589 48.9583 24.7238 48.9583 25.0001C48.9583 25.2763 48.8486 25.5413 48.6532 25.7367C48.4579 25.932 48.1929 26.0417 47.9167 26.0417Z" fill="#EFD358"/>
+                      <path d="M39.5834 48.9583H10.4167C5.24794 48.9583 1.04169 44.753 1.04169 39.5833C1.04169 34.4135 5.24794 30.2083 10.4167 30.2083C11.2625 30.2083 12.1073 30.328 12.9396 30.5666C14.0067 28.5713 15.595 26.903 17.5355 25.7392C19.4759 24.5755 21.6957 23.96 23.9584 23.9583C26.3502 23.9585 28.6917 24.6456 30.7045 25.9379C32.7173 27.2301 34.3167 29.0731 35.3125 31.2478C36.6321 30.5636 38.0969 30.207 39.5834 30.2083C44.7521 30.2083 48.9584 34.4135 48.9584 39.5833C48.9584 44.753 44.7521 48.9583 39.5834 48.9583Z" fill="#E0E0E0"/>
+                    </svg>
+                    <span class="temp text-num-heading-h1 text-neutral-white whitespace-nowrap">29°C</span>
+                  </div>
+                </div>
+                <div class="card-big-top-right text-heading-h5 text-neutral-white min-w-0 w-min h-fit flex items-center justify-center text-center">
+                  <span class="temp-desc">Partly Sunny</span>
+                </div>
+              </div>
+              <div class="card-big-bottom w-full text-neutral-white text-body-large">
+                <div class="card-big-bottom-content grid grid-flow-col grid-cols-[auto_auto] grid-rows-3 md:grid-rows-2 md:border-t md:border-neutral-white/50 lg:border-none w-full md:justify-between items-center gap-x-10 gap-y-1.5 md:pt-5 lg:pt-6 md:pb-5">
+                  <span class="humid">Humidity: 80%</span>
+                  <span class="cloud">Cloudiness: 56%</span>
+                  <span class="wind">Wind: 12 Km/h</span>
+                  <span class="rain">Rain: 55%</span>
+                  <span class="pressure">Pressure: 56%</span>
+                  <span class="uv">UV: 12 Km/h</span>
+                </div>
+              </div>
             </div>
           </main>
         </div>
