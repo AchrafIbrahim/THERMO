@@ -5,12 +5,14 @@ const triggerIcon = document.getElementById("theme-trigger-icon");
 const triggerLabel = document.getElementById("time-label");
 const menu = document.getElementById("theme-menu");
 const options = menu.querySelectorAll("[data-theme]");
+toneTargets = [trigger, menu];
+const TONE_CLASSES = ["theme-switcher-black", "theme-switcher-white"];
 
 const themes = {
-  morning: { label: "Morning", bg: "./src/assets/img/bg-morning-ground.png" },
-  afternoon: { label: "Afternoon", bg: "./src/assets/img/bg-afternoon-ground.png" },
-  evening: { label: "Evening", bg: "./src/assets/img/bg-evening-ground.png" },
-  night: { label: "Night", bg: "./src/assets/img/bg-night-ground.png" },
+  morning: { label: "Morning", bg: "./src/assets/img/bg-morning-ground.png", tone: "theme-switcher-black" },
+  afternoon: { label: "Afternoon", bg: "./src/assets/img/bg-afternoon-ground.png", tone: "theme-switcher-black" },
+  evening: { label: "Evening", bg: "./src/assets/img/bg-evening-ground.png", tone: "theme-switcher-white" },
+  night: { label: "Night", bg: "./src/assets/img/bg-night-ground.png", tone: "theme-switcher-white" },
 };
 
 const STORAGE_KEY = "thermo-theme";
@@ -35,6 +37,11 @@ function setMenuOpen(open) {
 function applyTheme(theme) {
   const t = themes[theme];
   if (!t) return;
+
+  toneTargets.forEach((el) => {
+    el.classList.remove(...TONE_CLASSES);
+    el.classList.add(t.tone);
+  });
 
   bgContainer.style.backgroundImage = `url("${t.bg}")`;
   document.documentElement.dataset.theme = theme;

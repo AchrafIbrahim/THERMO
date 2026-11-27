@@ -24,13 +24,11 @@
   }
 
   .theme-switcher-black {
-    @apply z-10 flex flex-col items-center 
-         bg-neutral-black/10 backdrop-blur-lg;
+    @apply z-10 bg-neutral-black/10 backdrop-blur-lg;
   }
 
   .theme-switcher-white {
-    @apply z-10 flex flex-col items-center  
-         bg-neutral-white/10 backdrop-blur-lg;
+    @apply z-10 bg-neutral-white/10 backdrop-blur-lg;
   }
 
   .theme-option {
