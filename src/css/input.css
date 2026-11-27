@@ -34,8 +34,7 @@
   }
 
   .theme-option {
-    @apply flex size-10 items-center justify-center text-neutral-white
-         hover:bg-neutral-white/15 aria-checked:bg-neutral-white/25;
+    @apply w-full flex size-10 items-center justify-start text-neutral-white cursor-pointer;
   }
 }
 

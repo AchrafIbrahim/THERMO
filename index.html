@@ -17,23 +17,53 @@
       <div class="main-wrapper">
         <div class="content">
           <!--THEME NAV-->
-          <header class="flex h-11 w-full justify-end">
-            <div id="theme-switcher" class="glass theme-switcher-black">
-              <button id="theme-trigger" type="button" class="group flex h-11 items-center gap-1 rounded-full px-3 text-neutral-white" aria-label="Change theme" aria-haspopup="menu" aria-expanded="false" aria-controls="theme-menu">
-                <img id="theme-trigger-icon" src="./src/assets/img/bg-morning-ground.png" alt="" class="size-6 rounded-full" />
+          <header class="flex h-11 w-full justify-end items-start">
+            <div id="theme-switcher" class="z-10 flex flex-col md:w-44">
+              <button
+                id="theme-trigger"
+                type="button"
+                class="glass bg-neutral-black/10 rounded-full! group flex h-11 w-full justify-between items-center gap-1 px-3 text-neutral-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-white cursor-pointer"
+                aria-label="Theme: morning"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-controls="theme-menu"
+              >
+                <div class="flex flex-row items-center justify-center gap-1">
+                  <img id="theme-trigger-icon" src="./src/assets/img/bg-morning-ground.png" alt="" class="size-6 rounded-full object-cover object-bottom" />
+                  <span id="time-label" class="hidden md:inline ml-2 pr-3 text-body-regular">Morning</span>
+                </div>
                 <svg class="size-4 transition-transform group-aria-expanded:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M6 9l6 6 6-6" />
                 </svg>
               </button>
 
               <!--THEME DROPDOWN-->
-              <div id="theme-menu" role="menu" aria-label="Theme" class="theme-switcher-black hidden">
-                <button type="button" role="menuitemradio" data-theme="morning" aria-label="Morning" aria-checked="true" class=""><img src="./src/assets/img/bg-morning-ground.png" alt="" class="size-6 rounded-full" /></button>
-                <button type="button" role="menuitemradio" data-theme="afternoon" aria-label="Afternoon" aria-checked="true" class="rounded-full">
-                  <img src="./src/assets/img/bg-afternoon-ground.png" alt="" class="size-6 rounded-full" />
-                </button>
-                <button type="button" role="menuitemradio" data-theme="evening" aria-label="Evening" aria-checked="true" class="rounded-full"><img src="./src/assets/img/bg-evening-ground.png" alt="" class="size-6 rounded-full" /></button>
-                <button type="button" role="menuitemradio" data-theme="night" aria-label="Night" aria-checked="true" class="rounded-full"><img src="./src/assets/img/bg-night-ground.png" alt="" class="size-6 rounded-full" /></button>
+              <div id="theme-menu" role="radiogroup" aria-label="Theme" class="glass rounded-[20px] bg-neutral-black/10 overflow-hidden hidden flex-col w-full">
+                <div class="w-full flex flex-col hover:bg-neutral-white/10">
+                  <button type="button" role="radio" data-theme="morning" aria-label="Morning" aria-checked="true" class="theme-option rounded-full focus-visible:outline-2 focus-visible:outline-neutral-white gap-2 p-2">
+                    <img src="./src/assets/img/bg-morning-ground.png" alt="" class="size-6 rounded-full object-cover object-bottom" />
+                    <span class="hidden md:inline ml-2 pr-3 text-body-regular">Morning</span>
+                  </button>
+                </div>
+
+                <div class="w-full flex flex-col hover:bg-neutral-white/10">
+                  <button type="button" role="radio" data-theme="afternoon" aria-label="Afternoon" aria-checked="false" class="theme-option rounded-full focus-visible:outline-2 focus-visible:outline-neutral-white gap-2 p-2">
+                    <img src="./src/assets/img/bg-afternoon-ground.png" alt="" class="size-6 rounded-full object-cover object-bottom" />
+                    <span class="hidden md:inline ml-2 pr-3 text-body-regular">Afternoon</span>
+                  </button>
+                </div>
+                <div class="w-full flex flex-col hover:bg-neutral-white/10">
+                  <button type="button" role="radio" data-theme="evening" aria-label="Evening" aria-checked="false" class="theme-option rounded-full focus-visible:outline-2 focus-visible:outline-neutral-white gap-2 p-2">
+                    <img src="./src/assets/img/bg-evening-ground.png" alt="" class="size-6 rounded-full object-cover object-bottom" />
+                    <span class="hidden md:inline ml-2 pr-3 text-body-regular">Evening</span>
+                  </button>
+                </div>
+                <div class="w-full flex flex-col hover:bg-neutral-white/10">
+                  <button type="button" role="radio" data-theme="night" aria-label="Night" aria-checked="false" class="theme-option rounded-full focus-visible:outline-2 focus-visible:outline-neutral-white gap-2 p-2">
+                    <img src="./src/assets/img/bg-night-ground.png" alt="" class="size-6 rounded-full object-cover object-bottom" />
+                    <span class="hidden md:inline ml-2 pr-3 text-body-regular">Night</span>
+                  </button>
+                </div>
               </div>
             </div>
           </header>
