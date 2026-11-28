@@ -1,5 +1,7 @@
 node_modules/
 src/css/output.css
+src/js/config.js
+node_modules/
 *.log
 npm-debug.log*
 .env
