@@ -9,8 +9,8 @@ const search = document.getElementById("theme-search");
 const refresh = document.getElementById("theme-refresh");
 const cardbig = document.getElementById("theme-cardbig");
 const cardsmall = document.getElementById("theme-cardsmall");
-toneTargets = [trigger, menu, search, refresh, cardbig, cardsmall];
 const TONE_CLASSES = ["theme-switcher-black", "theme-switcher-white"];
+const TONE_SELECTOR = TONE_CLASSES.map((c) => "." + c).join(",");
 
 const themes = {
   morning: { label: "Morning", bg: "./src/assets/img/bg-morning-ground.png", tone: "theme-switcher-black" },
@@ -42,7 +42,7 @@ function applyTheme(theme) {
   const t = themes[theme];
   if (!t) return;
 
-  toneTargets.forEach((el) => {
+  document.querySelectorAll(TONE_SELECTOR).forEach((el) => {
     el.classList.remove(...TONE_CLASSES);
     el.classList.add(t.tone);
   });
