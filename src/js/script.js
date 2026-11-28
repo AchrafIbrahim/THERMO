@@ -90,3 +90,49 @@ try {
   saved = localStorage.getItem(STORAGE_KEY);
 } catch {}
 applyTheme(themes[saved] ? saved : themeFromHour());
+
+function initForecastScroll() {
+  const scroller = document.getElementById("forecast-scroller");
+  if (!scroller) return;
+
+  let isDown = false;
+  let moved = false;
+  let startX = 0;
+  let startScroll = 0;
+
+  scroller.addEventListener("pointerdown", (e) => {
+    if (e.pointerType !== "mouse") return;
+    isDown = true;
+    moved = false;
+    startX = e.clientX;
+    startScroll = scroller.scrollLeft;
+  });
+
+  scroller.addEventListener("pointermove", (e) => {
+    if (!isDown) return;
+    const dx = e.clientX - startX;
+
+    if (!moved && Math.abs(dx) > 5) {
+      moved = true;
+      scroller.style.scrollSnapType = "none";
+      scroller.style.scrollBehavior = "auto";
+      scroller.style.cursor = "grabbing";
+      scroller.setPointerCapture(e.pointerId);
+    }
+    if (moved) scroller.scrollLeft = startScroll - dx;
+  });
+
+  function endDrag(e) {
+    if (!isDown) return;
+    isDown = false;
+    if (!moved) return;
+    scroller.style.scrollSnapType = "";
+    scroller.style.scrollBehavior = "";
+    scroller.style.cursor = "";
+    scroller.releasePointerCapture(e.pointerId);
+  }
+  scroller.addEventListener("pointerup", endDrag);
+  scroller.addEventListener("pointercancel", endDrag);
+}
+
+initForecastScroll();
