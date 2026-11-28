@@ -8,7 +8,8 @@ const options = menu.querySelectorAll("[data-theme]");
 const search = document.getElementById("theme-search");
 const refresh = document.getElementById("theme-refresh");
 const cardbig = document.getElementById("theme-cardbig");
-toneTargets = [trigger, menu, search, refresh, cardbig];
+const cardsmall = document.getElementById("theme-cardsmall");
+toneTargets = [trigger, menu, search, refresh, cardbig, cardsmall];
 const TONE_CLASSES = ["theme-switcher-black", "theme-switcher-white"];
 
 const themes = {
