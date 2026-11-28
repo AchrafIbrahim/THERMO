@@ -1,6 +1,7 @@
 import { getSavedTheme, saveTheme } from "./state.js";
 import { themeFromHour } from "./utils.js";
 import { dom, applyTheme, setMenuOpen, isMenuOpen, preloadBackgrounds, initForecastScroll } from "./ui.js";
+import { fetchWeather } from "./api.js";
 
 function selectTheme(theme) {
   applyTheme(theme);
@@ -27,6 +28,12 @@ document.addEventListener("keydown", (e) => {
     dom.trigger.focus();
   }
 });
+
+/* API Testing with Loc
+fetchWeather("Jakarta")
+  .then(console.log)
+  .catch((err) => console.error(err.message));
+*/
 
 preloadBackgrounds();
 applyTheme(getSavedTheme() ?? themeFromHour());
